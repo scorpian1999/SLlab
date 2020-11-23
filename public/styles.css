@@ -1,0 +1,45 @@
+#after_submit1 {
+  visibility: hidden;
+}
+#after_submit2 {
+  visibility: hidden;
+}
+#after_submit3 {
+  visibility: hidden;
+}
+#after_submit4 {
+  visibility: hidden;
+}
+header{
+  background-color: red;
+  text-align: center;
+  padding: 8%;
+}
+footer{
+  background-color: red;
+  text-align: center;
+  padding: 5%;
+}
+h1{
+  font-family: 'Bangers', cursive;
+}
+h3{
+  font-family: 'Suez One', serif;
+}
+p{
+  font-family: 'Sigmar One', cursive;
+}
+label{
+  font-family: 'Hammersmith One', sans-serif;
+}
+.button{
+  font-size: 20px;
+  border-radius: 10px;
+}
+.regBody{
+  text-align: center;
+  padding: 2%;
+}
+#quiz{
+  text-align: center;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #after_submit1 {
+        visibility: hidden;
+      }
+      #after_submit2 {
+        visibility: hidden;
+      }
+      #after_submit3 {
+        visibility: hidden;
+      }
+      #after_submit4 {
+        visibility: hidden;
+      }
+      header{
+        background-color: gray;
+        text-align: center;
+        padding: 8%;
+      }
+      footer{
+        background-color: gray;
+        text-align: center;
+        padding: 5%;
+      }
+      .button{
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      .regBody{
+        text-align: center;
+        padding: 2%;
+      }
+      #quiz{
+        text-align: center;
+      }
+    </style>
+      <!-- javascript -->
+    <script type="text/javascript">
+      function check(){
+
+          document.getElementById("after_submit1").style.visibility="visible";
+          document.getElementById("after_submit2").style.visibility="visible";
+          document.getElementById("after_submit3").style.visibility="visible";
+          document.getElementById("after_submit4").style.visibility="visible";
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>WELCOME TO THE QUIZ!</h1>
+      <br>
+      <form class="Registration" method="post">
+          <label for="RegNo">Registration No:</label><br>
+          <input type="text" id="RegNo" name=""><br>
+          <label for="Password">Password:</label><br>
+          <input type="Password" name="Password" value=""><br>
+      </form>
+    </header>
+    <br>
+    <br>
+
+    <form id="quiz" method="post">
+      <h2>Tick the correct answer</h2>
+      <br>
+      <h3>What is HTML?</h3>
+      <input type="radio" id="mc" name="question1" value="a web development language">
+      <label for="option">a web development language</label><br>
+      <input type="radio" id="mc" name="question1" value="a pc game">
+      <label for="option">a pc game</label><br>
+      <input type="radio" id="mc" name="question1" value="a computer device">
+      <label for="option">a computer device</label><br>
+      <input type="radio" id="mc" name="question1" value="NONE OF THE ABOVE">
+      <label for="option">None of the above.</label><br>
+      <p id="after_submit1">CORRECT ANS 1:a web development language</p>
+      <br>
+
+      <h3>HTML stands for Hyper Text Mark Up Language?</h3>
+      <input type="radio" id="mc" name="question2" value="true">
+      <label for="option">TRUE</label><br>
+      <input type="radio" id="mc" name="question2" value="false">
+      <label for="option">FALSE</label><br>
+      <p id="after_submit2">CORRECT ANS:TRUE</p>
+      <br>
+
+      <h3>What is CSS stands for?</h3>
+      <input type="radio" id="mc" name="question3" value="Counter Strike System">
+      <label for="option">Counter Strike System</label><br>
+      <input type="radio" id="mc" name="question3" value="Cursive Simple System">
+      <label for="option">Cursive Simple System</label><br>
+      <input type="radio" id="mc" name="question3" value="Cascading Style Sheets">
+      <label for="option">Cascading Style Sheets</label><br>
+      <input type="radio" id="mc" name="question3" value="NONE OF THE ABOVE">
+      <label for="option">None of the above.</label><br>
+      <p id="after_submit3">CORRECT ANS 3:Cascading Style Sheets</p>
+      <br>
+
+      <h3>Is java and javascript same?</h3>
+      <input type="radio" id="mc" name="question4" value="true">
+      <label for="option">TRUE</label><br>
+      <input type="radio" id="mc" name="question4" value="false">
+      <label for="option">FALSE</label><br>
+      <p id="after_submit4">CORRECT ANS:FALSE</p>
+      <br>
+    </form>
+    <br>
+    <footer>
+      <form class="submission" method="post">
+        <input type="checkbox" name="checkbox" value="tick">
+        <label for="checkbox"> Send an email of the response.</label><br>
+        <input class="button" type="button" name="button" value="submit" onclick="check();">
+      </form>
+    </footer>
+  </body>
+</html>
